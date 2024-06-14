@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./Resources/img_bg.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.music-player {
+    background: #2a2335;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.album-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.music-info {
+    margin: 15px 0;
+}
+
+.music-info .audio-name, .music-info .audio-artist {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.progress-bar {
+    margin: 15px 0;
+}
+.progress-bar input {
+    width: 100%;
+}
+
+/* Define the slider width so that it scales properly */
+.slider_container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_container img {
+    display: block;
+    max-width: 32px; /* Cambia esto según el tamaño deseado */
+    height: auto;
+    margin-right: 10px; /* Espacio entre el SVG y el slider */
+    width: 100%;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+
+.seek_slider {
+    width: 60%;
+}
+
+.volume_slider {
+    width: 30%;
+}
+
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+}
+
+/* Change the mouse cursor to a pointer when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+    cursor: pointer;
+}
