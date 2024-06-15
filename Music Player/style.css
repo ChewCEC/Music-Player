@@ -8,6 +8,18 @@ body {
     margin: 0;
 }
 
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.music-info, .slider_container {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
 .music-player {
     background: #2a2335;
     border-radius: 14px;
@@ -41,6 +53,15 @@ body {
     color: #ffffff;
 }
 
+.audio-name {
+    font-size: 18px;
+
+}
+
+.audio-artist {
+    font-size: 14px;
+}
+
 
 .controls {
     display: flex;
@@ -67,13 +88,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: whitesmoke;
 }
 
 .slider_container img {
     display: block;
     max-width: 32px; /* Cambia esto según el tamaño deseado */
     height: auto;
-    margin-right: 10px; /* Espacio entre el SVG y el slider */
+    margin-right: 3px; /* Espacio entre el SVG y el slider */
     width: 100%;
 }
 
@@ -117,13 +139,13 @@ body {
 }
 
 .current-time,
-.total-duration {
+.total-time {
     padding: 10px;
 }
 
 i.fa-volume-down,
 i.fa-volume-up {
-    padding: 10px;
+    padding: 5px;
 }
 
 /* Change the mouse cursor to a pointer when hovered over */
